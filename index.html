@@ -40,6 +40,13 @@
         </div>
       </nav>
 
+      <form>
+        <h1 class="cover-heading">Search the WWWs</h1>
+        <input class="search" type="text" id="webSearch" value="">
+        <input class="searchButton" type="button" value="Search" onclick="searchTheWeb()" />
+        <input type="submit" style="display: none" onclick="searchTheWeb()" />
+      </form>
+
       <div style="float:left;width:auto;padding-right:100px">
         <h1 class="cover-heading">Lets get browsing</h1>
             
@@ -57,7 +64,7 @@
         </p>
 
       </div>       
-      <div style="width:auto;">
+      <div style="float:left;width:auto;padding-right:100px">
         <h1 class="cover-heading">Lets get Viewing</h1>
 
         <p> 
@@ -67,9 +74,34 @@
           <a href="https://play.google.com/music/listen">Google Music</a> 
         </p>
 
-      </div>          
+      </div>    
+      <div style="float:left;width:auto;">
+        <h1 class="cover-heading">Work?!</h1>
+
+        <p> 
+          <a href="https://rmedinahu.github.io/">Medina</a> 
+        </p>
+        <p> 
+          <a href="https://banweb.nmhu.edu/prod/twbkwbis.P_WWWLogin">Banweb</a> 
+        </p>
+        <p> 
+          <a href="https://nmhu.desire2learn.com/d2l/login">Desire</a> 
+        </p>
+
+      </div>       
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+      function searchTheWeb() {
+        QUERY = "https://www.google.com/search?q=";
+
+        VALUES = document.getElementById("webSearch").value;
+
+        QUERY = QUERY + VALUES + "&gws_rd=ssl";
+        window.open(QUERY);
+      }
+    </script>
   </body>
 </html>

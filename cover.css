@@ -71,3 +71,10 @@ body {
   }
 }
 
+.search {
+  color: #000000;
+  width: auto;
+}
+.searchButton {
+  color: #000000;
+}
