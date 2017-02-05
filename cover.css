@@ -20,11 +20,11 @@ body {
   height: 100%;
   background-color: #333;
 }
-body {
+
+.cover-heading {
   color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-
 
 /*
  * Header
@@ -69,12 +69,4 @@ body {
   .masthead-nav {
     float: right;
   }
-}
-
-.search {
-  color: #333;
-  width: auto;
-}
-.searchButton {
-  color: #333;
 }
